@@ -1,0 +1,1 @@
+# google-maps-widget-magnolia
