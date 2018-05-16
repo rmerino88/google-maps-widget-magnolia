@@ -10,15 +10,15 @@ The dialog of the component is composed of two different tabs.
 
 First of the tabs contains the basic configuration of the component. Settings related to style and appearance, and the key necessary for the correct working of the api.
 
-(https://github.com/rmerino88/google-maps-widget-magnolia/webresources/screenshots/screenshot_mainTab.PNG  "First tab example")
+(https://github.com/rmerino88/google-maps-widget-magnolia/blob/master/google-maps-widget-magnolia/webresources/screenshots/screenshot_mainTab.PNG  "First tab example")
 
 In the second the user can add the coordinates to be shown in the map. Some aspects of it are configurable as the text shown in the info and the marker.
 
-(https://github.com/rmerino88/google-maps-widget-magnolia/webresources/screenshots/screenshot_coordinatesTab.PNG "Second tab example")
+(https://github.com/rmerino88/google-maps-widget-magnolia/blob/master/google-maps-widget-magnolia/webresources/screenshots/screenshot_coordinatesTab.PNG "Second tab example")
 
 Example of visualization
 
-(https://github.com/rmerino88/google-maps-widget-magnolia/webresources/screenshots/screenshot_result.PNG "Visualization example")
+(https://github.com/rmerino88/google-maps-widget-magnolia/blob/master/google-maps-widget-magnolia/webresources/screenshots/screenshot_result.PNG "Visualization example")
 
 ## License
 
