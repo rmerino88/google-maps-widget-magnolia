@@ -1,0 +1,4 @@
+title: google-maps-widget.title
+renderType: freemarker
+templateScript: /google-maps-widget-magnolia/templates/components/google-maps-widget.ftl
+dialog: google-maps-widget-magnolia:components/google-maps-widget

@@ -1,0 +1,15 @@
+.btnVolverMapa{
+	position: absolute;
+	margin-left: 10px;
+	top: 10px;
+}
+.mapa{
+	display: block;
+    margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+.map-container{
+    margin: 0 auto;	
+	position: relative;
+}

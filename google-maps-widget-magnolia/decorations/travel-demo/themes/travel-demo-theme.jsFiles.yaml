@@ -1,0 +1,3 @@
+googlemapswidget:
+  addFingerPrint: true
+  link: /.resources/google-maps-widget-magnolia/webresources/js/functions-google-maps.js

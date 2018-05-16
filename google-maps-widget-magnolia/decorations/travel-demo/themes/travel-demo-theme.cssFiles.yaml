@@ -1,0 +1,4 @@
+googlemapswidget:
+  addFingerPrint: true
+  link: /.resources/google-maps-widget-magnolia/webresources/css/google-maps-widget.css
+  media: all  

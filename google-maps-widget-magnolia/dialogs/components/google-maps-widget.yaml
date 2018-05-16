@@ -1,0 +1,125 @@
+# Automatically generated dialog with few most often used fileds (text, right, link, DAM image, multivalue, link to app, select). Feel free to modify them for your specific component.
+
+form:
+  label: google-map-widget
+  tabs:
+    - name: tabMain
+      fields:
+
+        - name: mapType
+          class: info.magnolia.ui.form.field.definition.SwitchableFieldDefinition
+          selectionType: radio
+          type: String
+          options:
+            - name: roadmap
+              selected: true
+              value: roadmap
+            - name: satellite
+              selected: false
+              value: satellite
+            - name: hybrid
+              selected: false
+              value: hybrid
+            - name: terrain
+              selected: false
+              value: terrain
+          fields:
+            - name: roadmap
+              class: info.magnolia.ui.form.field.definition.SelectFieldDefinition
+              options:
+                - name: standard
+                  selected: true
+                  value: standard
+                - name: silver
+                  selected: false
+                  value: silver
+                - name: dark
+                  selected: false
+                  value: dark
+                - name: night
+                  selected: false
+                  value: night
+                - name: retro
+                  selected: false
+                  value: retro
+                - name: aubergine
+                  selected: false
+                  value: aubergine                  
+              
+        - name: latitudInicial
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition   
+          required: true
+          
+        - name: longitudInicial
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          required: true
+          
+        - name: zoom
+          type: String
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          
+        - name: width
+          type: String
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          
+        - name: height
+          type: String
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+   
+        - name: botonVolverAlMapa
+          i18n: true
+          type: String
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          required: true 
+          
+        - name: googleMapsKey
+          type: String
+          class: info.magnolia.ui.form.field.definition.TextFieldDefinition
+          required: true
+
+    - name: tabCoordinates
+      fields:
+      
+        - name: coordenadas
+          class: info.magnolia.ui.form.field.definition.MultiValueFieldDefinition
+          transformerClass: info.magnolia.ui.form.field.transformer.multi.DelegatingMultiValueFieldTransformer
+          label: Coordenadas
+          field:
+            name: coordenada
+            class: info.magnolia.ui.form.field.definition.CompositeFieldDefinition
+            transformerClass: info.magnolia.ui.form.field.transformer.composite.DelegatingCompositeFieldTransformer
+            layout: vertical
+            label: Coordenada
+            fields:
+            
+              - name: latitud
+                required: true
+                class: info.magnolia.ui.form.field.definition.TextFieldDefinition   
+            
+              - name: longitud
+                required: true
+                class: info.magnolia.ui.form.field.definition.TextFieldDefinition   
+                
+              - name: image
+                class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
+                targetWorkspace: dam
+                appName: assets
+                identifierToPathConverter:
+                  class: info.magnolia.dam.app.assets.field.translator.AssetCompositeIdKeyTranslator
+                contentPreviewDefinition:
+                  contentPreviewClass: info.magnolia.dam.app.ui.field.DamFilePreviewComponent
+
+              - name: title
+                required: true
+                i18n: true
+                class: info.magnolia.ui.form.field.definition.TextFieldDefinition  
+                  
+              - name: contenido
+                i18n: true
+                class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition               
+
+actions:
+  commit:
+    class: info.magnolia.ui.admincentral.dialog.action.SaveDialogActionDefinition
+  cancel:
+    class: info.magnolia.ui.admincentral.dialog.action.CancelDialogActionDefinition
